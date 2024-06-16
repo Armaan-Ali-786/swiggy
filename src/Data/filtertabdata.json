@@ -1,0 +1,104 @@
+[
+    {
+        "id" : 0,
+        "head" : "Sort By",
+        "data" : [
+            {
+                "child1" : "Relevance (Default)",
+                "cid" : 0
+            },
+            {
+                "child1" : "Delivery Time",
+                "cid" : 1
+            },
+            {
+                "child1" : "Rating",
+                "cid" : 2
+            },
+            {
+                "child1" : "Cost:LowToHigh",
+                "cid" : 3
+            },
+            {
+                "child1" : "Cost:HighToLow",
+                "cid" : 4
+            }           
+        ],
+        "status" : "radio"
+    },
+    {
+        "id" : 1,
+        "head" : "Filter By",
+        "data" : [{"child1" : "Fast delivery",
+        "cid" : 0}],
+        "status" : "check"
+    },
+    {
+        "id" : 2,
+        "head" : "Filter By Cuisine",
+        "data" : [
+            {
+                "child1" : "Afghani",
+                "cid" : 0
+            },
+            {
+                "child1" : "Arabian",
+                "cid" : 1       
+            },
+            {
+                "child1" : "Asian",
+                "cid" : 2
+            },
+            {
+                "child1" : "Andrian",
+                "cid" : 3
+            },
+            {
+                "child1" : "Punjabi",
+                "cid" : 4
+            }               
+        ],
+        "status" : "check"    
+    },
+    {
+        "id" : 3,
+        "head" : "Filter By",
+        "data" : [{"child1" : "New on Swiggy",
+        "cid" : 0}],
+        "status" : "check"
+    },
+    {
+        "id" : 4,
+        "head" : "Filter By",
+        "data" :    [
+            {
+                "child1" : "Rating 4.0+",
+                "cid" : 0
+            },
+            {
+                "child1" : "Rating 4.5+",
+                "cid" : 1
+            },
+            {
+                "child1" : "Rating 5.0+",
+                "cid" : 2
+            }           
+        ],
+        "status" : "check"
+    },
+    {
+        "id" : 5,
+        "head" : "Filter By",
+        "data" : [
+            {
+                "child1" : "Pure Veg",
+                "cid" : 0
+            },
+            {
+                "child1" : "Veg / Non Veg",
+                "cid" : 1
+            }
+        ],
+        "status" : "radio"
+    }
+]

@@ -1,13 +1,62 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+}
+.swiggy-corpo-bg{
+    background: url('images/bikeboy.png') no-repeat bottom left,url('images/fruitbucket.png') no-repeat bottom right;
+}
+.dboy-bg{
+    background:url('images/dboy.png') no-repeat center;
+}
+.slick-slide{
+    margin:0px 15px 0px 15px ;
+}
+.black-banner{
+    background-color: black;
+    background-image: url('images/black-banner.jpg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    border-radius: 50px;
+}
+.owl-prev{
+    position: absolute!important;
+    top: 29%!important;
+    width: 35px!important;
+    left: 0px!important;
+    height: 50px!important;
+    display: none!important;
+    align-items: center!important;
+    font-size: 90px!important;
+    justify-content: center!important;
+    background: rgba(0, 0, 0, 0.5)!important;
+    color: white!important;
+    font-weight: 100!important;
+}
+.owl-next{
+    position: absolute!important;
+    top: 29%!important;
+    width: 35px!important;
+    right: 0px!important;
+    height: 50px!important;
+    display: none!important;
+    align-items: center!important;
+    font-size: 90px!important;
+    justify-content: center!important;
+    background: rgba(0, 0, 0, 0.5)!important;
+    color: white!important;
+    font-weight: 100!important;
+}
+.team-slider:hover .owl-next , .team-slider:hover .owl-prev{
+    display: flex!important;
+}
+.team-card:hover .img1{
+    display: none!important;
+}
+.team-card:hover .img2{
+    display: block!important;
 }

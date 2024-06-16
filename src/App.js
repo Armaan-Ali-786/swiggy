@@ -1,24 +1,39 @@
 import logo from './logo.svg';
 import './App.css';
+import Home from './MainPage/Home';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import MainContext from './Global/MainContext';
+import Search from './MainPage/Search';
+import Help from './MainPage/Help';
+import Sign from './MainPage/Sign';
+import SwigyCorporate from './MainPage/SwigyCorporate';
+
+let router = createBrowserRouter([
+  {
+    path:'/',
+    element:<Home/>
+  },
+  {
+    path:'/about-us',
+    element:<SwigyCorporate/>
+  },
+  {
+    path:'/about',
+    element:<Search/>
+  },
+  {
+    path:'/help',
+    element:<Help/>
+  }
+])
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <MainContext>
+      <RouterProvider router={router}></RouterProvider>
+    </MainContext>
+    </>
   );
 }
 
